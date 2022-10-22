@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Arithmetic operations</title>
+</head>
+
+<body>
+    <h1> Arithmetic Operations </h1>
+    <input type="number" id="input1" /><br><br>
+    <input type="number" id="input2" /><br>
+    <h3> Output: </h3>
+    <label id="output"></label><br>
+    <h3>click on the operation you want to perform</h3>
+    <button id="add button" type="button" onclick="addt()">Addition</button><br><br>
+    <button id="sub button" type="button" onclick="sub()">Subtraction</button><br><br>
+    <button id="Multi button" type="button" onclick="multi()">Multiplication</button><br><br>
+    <button id = "divide button" type = "button" onclick = "divide()">Division</button> 
+    <script>
+        function getInput1() {
+            return parseInt(document.getElementById("input1").value);
+        }
+
+        function getInput2() {
+            return parseInt(document.getElementById("input2").value);
+        }
+        function addt() {
+            document.getElementById("output").innerHTML = getInput1() + getInput2();
+        }
+        function sub() {
+            document.getElementById("output").innerHTML = getInput1() - getInput2();
+        }
+        function multi() {
+            document.getElementById("output").innerHTML = getInput1() * getInput2();
+        }
+        function divide(){
+            document.getElementById("output").innerHTML = getInput1() / getInput2();
+        }
+    </script>
+</body>
+
+</html>
